@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import { FaGraduationCap, FaFlask, FaCamera } from 'react-icons/fa6'
+import { FaCamera } from 'react-icons/fa6'
 import { motion } from 'framer-motion'
 import { useLanguage } from '../contexts/LanguageContext'
 

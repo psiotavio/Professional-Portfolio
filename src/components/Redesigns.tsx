@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react'
-import { FaXTwitter, FaInstagram, FaAmazon, FaSpotify, FaArrowRight } from 'react-icons/fa6'
+import { FaInstagram, FaAmazon, FaSpotify, FaArrowRight } from 'react-icons/fa6'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useLanguage } from '../contexts/LanguageContext'
 

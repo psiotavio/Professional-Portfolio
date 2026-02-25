@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from 'react'
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
-import { FaFilm, FaBook, FaPlaneUp, FaHeart, FaGamepad, FaStar, FaApple, FaGooglePlay, FaXmark, FaChevronLeft, FaChevronRight } from 'react-icons/fa6'
+import { FaStar, FaApple, FaGooglePlay, FaXmark, FaChevronLeft, FaChevronRight } from 'react-icons/fa6'
 import { useLanguage } from '../../contexts/LanguageContext'
 import { useIsMobile } from '../../hooks/useIsMobile'
 import '../../styles/v2.css'

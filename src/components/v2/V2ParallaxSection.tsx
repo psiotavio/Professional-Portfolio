@@ -1,4 +1,4 @@
-import { useRef, ReactNode } from 'react'
+import { useRef, type ReactNode } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import '../../styles/v2.css'
 

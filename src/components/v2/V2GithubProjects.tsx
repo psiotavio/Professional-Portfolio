@@ -68,9 +68,6 @@ export default function V2GithubProjects() {
         fetchGithubData()
     }, [])
 
-    const itemVariants = {
-        visible: { opacity: 1, y: 0, transition: { type: 'spring', stiffness: 70, damping: 20 } }
-    }
 
     return (
         <section className="v2-github v2-section" id="github" ref={sectionRef}>

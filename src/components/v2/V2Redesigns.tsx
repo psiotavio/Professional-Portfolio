@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
-import { FaXTwitter, FaInstagram, FaAmazon, FaSpotify, FaArrowRight } from 'react-icons/fa6'
+import { FaInstagram, FaAmazon, FaSpotify, FaArrowRight } from 'react-icons/fa6'
 import { useLanguage } from '../../contexts/LanguageContext'
 import { useIsMobile } from '../../hooks/useIsMobile'
 import '../../styles/v2.css'
