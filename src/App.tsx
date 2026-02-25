@@ -1,39 +1,21 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ThemeProvider } from './contexts/ThemeContext'
 import { LanguageProvider } from './contexts/LanguageContext'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import About from './components/About'
-import AppProjects from './components/AppProjects'
-import Redesigns from './components/Redesigns'
-import GithubProjects from './components/GithubProjects'
-import Skills from './components/Skills'
-import Awards from './components/Awards'
-import Contact from './components/Contact'
+import V1 from './pages/V1'
+import V2 from './pages/V2'
 import './index.css'
-
-function PortfolioApp() {
-  return (
-    <>
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <AppProjects />
-        <Redesigns />
-        <GithubProjects />
-        <Skills />
-        <Awards />
-        <Contact />
-      </main>
-    </>
-  )
-}
 
 export default function App() {
   return (
     <ThemeProvider>
       <LanguageProvider>
-        <PortfolioApp />
+        <BrowserRouter>
+          <Routes>
+            {/* <Route path="/" element={<V1 />} /> */}
+            <Route path="/" element={<V2 />} />
+            <Route path="/v1" element={<V1 />} />
+          </Routes>
+        </BrowserRouter>
       </LanguageProvider>
     </ThemeProvider>
   )

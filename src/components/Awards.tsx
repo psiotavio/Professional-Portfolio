@@ -10,7 +10,7 @@ const awardItems = [
     variant: 'silver',
     iconBg: 'rgba(208,208,208,0.12)',
     iconColor: '#c0c0c0',
-    year: '2023',
+    year: '2025',
   },
   {
     key: 'apple',
@@ -18,7 +18,7 @@ const awardItems = [
     variant: 'blue',
     iconBg: 'var(--accent-subtle)',
     iconColor: 'var(--accent)',
-    year: '2022',
+    year: '2025',
   },
 ]
 

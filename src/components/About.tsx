@@ -73,12 +73,12 @@ export default function About() {
             <motion.div className="about__education" variants={itemVariants} style={{ marginTop: 'var(--s5)' }}>
               {/* Grad */}
               <motion.div className="edu-card" whileHover={{ scale: 1.02 }} transition={{ type: 'spring' as const, stiffness: 400, damping: 10 }}>
-                <div
+                {/* <div
                   className="edu-card__icon"
                   style={{ background: 'var(--green-subtle)', color: 'var(--green)' }}
                 >
                   <FaGraduationCap size={20} />
-                </div>
+                </div> */}
                 <div>
                   <div className="edu-card__degree">{t('edu.degree1')}</div>
                   <div className="edu-card__school">{t('edu.school1')}</div>
@@ -88,12 +88,12 @@ export default function About() {
 
               {/* Masters */}
               <motion.div className="edu-card" whileHover={{ scale: 1.02 }} transition={{ type: 'spring' as const, stiffness: 400, damping: 10 }}>
-                <div
+                {/* <div
                   className="edu-card__icon"
                   style={{ background: 'var(--accent-subtle)', color: 'var(--accent)' }}
                 >
                   <FaFlask size={18} />
-                </div>
+                </div> */}
                 <div>
                   <div className="edu-card__degree">{t('edu.degree2')}</div>
                   <div className="edu-card__school">{t('edu.school2')}</div>

@@ -8,6 +8,7 @@ import {
   FaStar,
   FaApple,
   FaTrophy,
+  FaGooglePlay
 } from 'react-icons/fa6'
 import { motion } from 'framer-motion'
 import { useLanguage } from '../contexts/LanguageContext'
@@ -20,6 +21,8 @@ const apps = [
     iconColor: '#e5c46a',
     top100: true,
     tech: ['React Native', 'TypeScript', 'TMDB API'],
+    appStore: true,
+    playStore: true,
   },
   {
     key: 'readfolio',
@@ -27,6 +30,8 @@ const apps = [
     gradient: 'linear-gradient(135deg, #1a2a1a 0%, #2d3e2d 100%)',
     iconColor: '#30d158',
     tech: ['React Native', 'TypeScript'],
+    appStore: true,
+    playStore: true,
   },
   {
     key: 'travelfolio',
@@ -34,6 +39,8 @@ const apps = [
     gradient: 'linear-gradient(135deg, #001a35 0%, #003366 100%)',
     iconColor: '#5ac8fa',
     tech: ['React Native', 'Maps API'],
+    appStore: true,
+    playStore: false,
   },
   {
     key: 'nos2',
@@ -41,6 +48,8 @@ const apps = [
     gradient: 'linear-gradient(135deg, #2a001a 0%, #4d0033 100%)',
     iconColor: '#ff375f',
     tech: ['React Native', 'TypeScript'],
+    appStore: true,
+    playStore: true,
   },
   {
     key: 'minimystics',
@@ -48,6 +57,8 @@ const apps = [
     gradient: 'linear-gradient(135deg, #1a0d2e 0%, #32195c 100%)',
     iconColor: '#bf5af2',
     tech: ['React Native', 'Game Logic', 'TypeScript'],
+    appStore: true,
+    playStore: false,
   },
 ]
 
@@ -128,10 +139,6 @@ export default function AppProjects() {
                         Top 100
                       </span>
                     )}
-                    <span className="badge-appstore">
-                      <FaApple size={11} />
-                      iOS
-                    </span>
                   </div>
                 </div>
 
@@ -152,6 +159,18 @@ export default function AppProjects() {
                   {app.tech.map((tech) => (
                     <span key={tech} className="tech-pill">{tech}</span>
                   ))}
+                  {app.appStore && (
+                    <span className="tech-pill" style={{ background: 'rgba(255,255,255,0.1)', color: '#fff', border: '1px solid rgba(255,255,255,0.2)' }}>
+                      <FaApple size={11} style={{ marginRight: '4px' }} />
+                      iOS
+                    </span>
+                  )}
+                  {app.playStore && (
+                    <span className="tech-pill" style={{ background: 'rgba(0, 255, 100, 0.1)', color: '#00ff64', border: '1px solid rgba(0, 255, 100, 0.2)' }}>
+                      <FaGooglePlay size={10} style={{ marginRight: '4px' }} />
+                      Android
+                    </span>
+                  )}
                 </div>
               </motion.div>
             )
