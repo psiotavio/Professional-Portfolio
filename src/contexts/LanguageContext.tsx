@@ -117,7 +117,7 @@ const pt: Translations = {
   'awards.title': 'Prêmios &',
   'awards.title2': 'Formações',
   'awards.subtitle': 'Reconhecimentos que validam o compromisso com a excelência técnica e crescimento contínuo.',
-  'awards.hackathon.title': '2º Lugar — Hackathon de Engenharia de Software',
+  'awards.hackathon.title': '2º Lugar — Hackatona de Engenharia de Software',
   'awards.hackathon.org': 'PUCRS',
   'awards.hackathon.desc': 'Conquista em maratona de programação competitiva, resolvendo problemas reais sob alta pressão e prazos curtos.',
   'awards.apple.title': 'Certificação Apple Developer Academy',

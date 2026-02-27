@@ -1262,6 +1262,78 @@ body:has(.v2-container) {
     color: var(--v2-gold);
 }
 
+/* ── Mobile Horizontal Scroll Carousel ─────────────────────── */
+.v2-mobile-section-wrapper {
+    padding: 4rem 0 2.5rem;
+    overflow: hidden;
+}
+
+.v2-mobile-section-header {
+    padding: 0 1.5rem 2.5rem;
+}
+
+.v2-mobile-scroll-track {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding-left: 1.5rem;
+    padding: 0 1.5rem 1.5rem;
+    scrollbar-width: none;
+}
+
+.v2-mobile-scroll-track::-webkit-scrollbar {
+    display: none;
+}
+
+.v2-mobile-card {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 82vw;
+    max-width: 300px;
+    height: auto;
+    min-height: 380px;
+}
+
+.v2-mobile-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 1.25rem 0 0.5rem;
+}
+
+.v2-mobile-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.v2-mobile-dot.active {
+    background: var(--v2-gold);
+    width: 20px;
+    border-radius: 3px;
+}
+
+.v2-swipe-hint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    color: rgba(255, 255, 255, 0.25);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding-bottom: 0.75rem;
+}
+
 /* Mobile Adjustments */
 @media (max-width: 768px) {
 
